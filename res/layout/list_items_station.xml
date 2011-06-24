@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/Itemholder">
+		<TextView android:layout_height="wrap_content"
+			android:textSize="20dip" android:layout_centerVertical="true"
+			android:layout_width="100dip" android:id="@+id/ItemManager"
+			android:gravity="left" android:textColor="#000000" android:padding="5dip" />
+		<TextView android:layout_height="wrap_content"
+			android:textSize="20dip" android:layout_centerVertical="true"
+			android:layout_width="90dip" android:gravity="left"
+			android:textColor="#000000" android:padding="5dip"
+			android:layout_marginLeft="100dip" android:id="@+id/ImageTEXT" />
+		<TextView android:layout_height="wrap_content"
+			android:textSize="20dip" android:layout_centerVertical="true"
+			android:layout_width="wrap_content" android:id="@+id/time"
+			android:layout_marginLeft="190dip" android:gravity="left"
+			android:textColor="#000000" android:padding="5dip" />
+		<ImageView android:layout_width="wrap_content"
+			android:layout_centerVertical="true" android:layout_height="25dip"
+			android:id="@+id/ImageManager" android:paddingRight="10dip"
+			android:src="@drawable/inner" android:layout_alignParentRight="true" />
+	</RelativeLayout>
+</LinearLayout>

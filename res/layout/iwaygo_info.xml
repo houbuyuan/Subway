@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#FFFFFF" android:orientation="vertical">
+
+	<!-- 标题栏 -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="40dip" android:layout_margin="0dip"
+		android:background="@drawable/ui001_searchmode_title_bg">
+		<TextView android:id="@+id/showName" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:text="城市通" android:textColor="#FFFFFF" android:textSize="25dip" />
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" android:orientation="horizontal">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:layout_marginBottom="5dip" android:orientation="vertical">
+				<Button android:layout_height="30dip" android:text="返回"
+					android:id="@+id/backbutton" android:layout_width="130dip"
+					android:background="@drawable/go" android:textColor="#FFFFFF"
+					android:textSize="20sp" android:layout_gravity="center_horizontal"></Button>
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- 结果显示页面 -->
+		<ScrollView android:id="@+id/showWayScrollView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical" android:visibility="visible"
+			android:layout_alignParentTop="true" android:layout_marginBottom="30dip">
+			<LinearLayout android:layout_width="fill_parent"
+				android:orientation="vertical" android:layout_height="wrap_content"
+				android:id="@+id/showWaylinearLayout">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/showWaylinearLayout1"
+					android:background="#e3e3e3">
+					<TextView android:text="null" android:id="@+id/test_textView"
+						android:visibility="visible" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_margin="5dip"
+						android:textColor="#454545" android:textSize="22sp"></TextView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:orientation="vertical" android:layout_height="wrap_content"
+					android:id="@+id/infolinearLayout" android:background="#FFFFFF">
+					<TextView android:text="null" android:id="@+id/title1" android:background="#f7f7f7"
+						android:visibility="visible" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_marginTop="5dip"
+						android:textColor="#454545" android:textSize="22sp" />
+					<TextView android:text="null" android:id="@+id/test_textView2"
+						android:visibility="visible" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_margin="5dip"
+						android:textColor="#454545" android:textSize="22sp" />
+					<TextView android:text="null" android:id="@+id/title2" android:background="#f7f7f7"
+						android:visibility="visible" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" 
+						android:textColor="#454545" android:textSize="22sp" />
+					<TextView android:text="null" android:id="@+id/test_textView3"
+						android:visibility="visible" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:layout_margin="5dip"
+						android:textColor="#454545" android:textSize="22sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+
+
+	</RelativeLayout>
+</LinearLayout>

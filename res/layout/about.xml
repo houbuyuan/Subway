@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#FFFFFF" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content"
+		android:padding="10dip" android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/linearLayout2" android:layout_height="wrap_content">
+			<ImageView android:layout_width="wrap_content" android:id="@+id/imageView1"
+				android:layout_height="wrap_content" android:src="@drawable/logo72_72"></ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:orientation="vertical" android:id="@+id/linearLayout3"
+				android:layout_height="wrap_content" android:layout_margin="5dip">
+				<TextView android:layout_width="wrap_content"
+					android:textColor="#454545" android:id="@+id/title_setting"
+					android:layout_height="wrap_content" android:textStyle="bold"
+					android:text="城市通[北京地铁]" android:textSize="16dip"></TextView>
+				<TextView android:layout_width="wrap_content"
+					android:textColor="#454545" android:id="@+id/title_setting"
+					android:layout_height="wrap_content" android:text="V1.0 BETA"
+					android:textSize="16dip"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<TextView android:layout_width="wrap_content"
+			android:textColor="#454545" android:id="@+id/title_setting"
+			android:layout_height="wrap_content" android:text="更多软件请访问 http://www.iwaygo.com/ \n\n\n\n"
+			android:textSize="13dip"></TextView>
+	</LinearLayout>
+
+</LinearLayout>

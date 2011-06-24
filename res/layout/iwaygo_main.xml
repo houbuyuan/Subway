@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#FFFFFF">
+
+	<!-- 标题栏 -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="40dip" android:layout_margin="0dip"
+		android:background="@drawable/ui001_searchmode_title_bg">
+		<TextView android:id="@+id/showName" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:text="城市通" android:textColor="#FFFFFF" android:textSize="25dip" />
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<!-- 使用空白隐藏的Layout获得焦点 -->
+		<LinearLayout android:id="@+id/nonefocus"
+			android:focusable="true" android:focusableInTouchMode="true"
+			android:layout_width="0px" android:layout_height="0px"></LinearLayout>
+
+		<!-- Search页面 -->
+		<ScrollView android:id="@+id/searchScrollView"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical" android:visibility="visible"
+			android:layout_alignParentTop="true" android:layout_marginBottom="60dip">
+			<LinearLayout android:id="@+id/testLayout1"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+					<TextView android:text="起点车站：" android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:id="@+id/textView2"
+						android:paddingLeft="5dip" android:paddingTop="5dip"
+						android:textSize="20dip" android:textColor="#454545"></TextView>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout1"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_margin="5dip">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:id="@+id/linearLayout7">
+						<EditText android:inputType="text" android:imeOptions="actionNext"
+							android:text="" android:layout_height="fill_parent"
+							android:layout_width="wrap_content" android:id="@+id/startEditText"
+							android:editable="true"></EditText>
+					</LinearLayout>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:id="@+id/linearLayout8">
+						<ImageButton android:id="@+id/startbyline"
+							android:layout_width="60dip" android:layout_height="wrap_content"
+							android:src="@drawable/line"></ImageButton>
+						<ImageButton android:id="@+id/startbylocation"
+							android:layout_width="60dip" android:layout_height="wrap_content"
+							android:src="@drawable/location"></ImageButton>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/linearLayout3">
+					<TextView android:text="终点车站：" android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:id="@+id/textView3"
+						android:paddingLeft="5dip" android:textSize="20dip"
+						android:textColor="#454545"></TextView>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/linearLayout5"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_margin="5dip">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:id="@+id/linearLayout9">
+						<EditText android:inputType="text" android:imeOptions="actionDone"
+							android:text="" android:layout_height="fill_parent"
+							android:layout_width="wrap_content" android:id="@+id/endEditText"
+							android:editable="true"></EditText>
+					</LinearLayout>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:id="@+id/linearLayout10">
+						<ImageButton android:id="@+id/endbyline"
+							android:layout_width="60dip" android:layout_height="wrap_content"
+							android:src="@drawable/line"></ImageButton>
+						<ImageButton android:id="@+id/endbylocation"
+							android:layout_width="60dip" android:layout_height="wrap_content"
+							android:src="@drawable/location"></ImageButton>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:visibility="invisible"
+					android:id="@+id/linearLayout6" android:layout_height="wrap_content"
+					android:layout_width="fill_parent">
+					<Spinner android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:id="@+id/spinner1"
+						android:layout_margin="5dip"></Spinner>
+				</LinearLayout>
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="45dip">
+					<Button android:gravity="center"
+						android:layout_centerHorizontal="true"
+						android:layout_centerVertical="true" android:layout_height="fill_parent"
+						android:text="出发" android:id="@+id/gobutton" android:layout_width="175dip"
+						android:background="@drawable/go" android:textColor="#FFFFFF"
+						android:textSize="25dip"></Button>
+				</RelativeLayout>
+				<LinearLayout android:id="@+id/linearLayout000"
+					android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<TextView android:text="注：以上站点默认值为测试使用，最终版本中不会出现。"
+						android:layout_margin="20dip" android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:id="@+id/textView1"></TextView>
+
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+
+		<!-- 底部菜单（默认visible） -->
+		<LinearLayout android:id="@+id/toolbarLayout"
+			android:layout_width="fill_parent" android:layout_height="55dip"
+			android:background="@drawable/m_bg_g"
+			android:layout_alignParentBottom="true">
+			<Button android:text="检索模式" android:textColor="#767676"
+				android:layout_width="wrap_content" android:id="@+id/search_button"
+				android:layout_height="fill_parent" android:drawableTop="@drawable/search_button"
+				android:background="@drawable/button_bg_selector"></Button>
+			<LinearLayout android:layout_width="2dip"
+				android:layout_height="fill_parent" android:background="@drawable/hr" />
+			<Button android:text="地图" android:textColor="#767676"
+				android:layout_width="wrap_content" android:id="@+id/input_button"
+				android:layout_height="fill_parent" android:drawableTop="@drawable/input_button"
+				android:background="@drawable/button_bg_selector"></Button>
+			<LinearLayout android:layout_width="2dip"
+				android:layout_height="fill_parent" android:background="@drawable/hr" />
+			<Button android:text="线路及车站" android:textColor="#767676"
+				android:layout_width="wrap_content" android:id="@+id/line_button"
+				android:layout_height="fill_parent" android:drawableTop="@drawable/line_button"
+				android:background="@drawable/button_bg_selector"></Button>
+			<LinearLayout android:layout_width="2dip"
+				android:layout_height="fill_parent" android:background="@drawable/hr" />
+			<Button android:text="设置" android:textColor="#767676"
+				android:layout_width="wrap_content" android:id="@+id/setting_button"
+				android:layout_height="fill_parent" android:drawableTop="@drawable/setting_button"
+				android:background="@drawable/button_bg_selector"></Button>
+		</LinearLayout>
+
+		<!-- 页面读取进度界面（默认invisible） -->
+		<LinearLayout android:id="@+id/loadingLayout"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical" android:visibility="invisible"
+			android:layout_centerInParent="true">
+			<ProgressBar android:id="@+id/loading"
+				android:layout_width="31dip" android:layout_height="31dip"
+				android:layout_gravity="center" style="@style/progressStyle">
+			</ProgressBar>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="正在载入"
+				android:textSize="12dip" android:textColor="#9c9c9c"
+				android:layout_gravity="center" android:layout_below="@+id/loading">
+			</TextView>
+		</LinearLayout>
+
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hello">Subway by iWayGo</string>
+    <string name="app_name">北京地铁</string>
+    <string name="go">出发</string>
+    <string name="clear">清空</string>
+    <string name="startpoint">发站:</string>
+    <string name="endpoint">到站:</string>
+    <string name="selectstart">请选择发站线路:</string>
+    <string name="selectstartpointt">请选择发站站点:</string>
+    <string name="selectend">请选择到站线路:</string>
+    <string name="selectendpointt">请选择到站站点:</string>
+    <string name="lesstransfer">最少换乘</string> 
+    <string name="thefastestway">最少时间</string>
+    <string-array name="startpoint">
+        <item>一号线</item>
+        <item>二号线</item>
+        <item>三号线</item>
+        <item>四号线</item>
+        <item>五号线</item>
+        <item>六号线</item>
+        <item>七号线</item>
+    </string-array>
+    <string-array name="endpoint">
+        <item>一号线</item>
+        <item>二号线</item>
+        <item>三号线</item>
+        <item>四号线</item>
+        <item>五号线</item>
+        <item>六号线</item>
+        <item>七号线</item>
+    </string-array>
+    <string-array name="item_dialog"> 
+       <item>检索模式</item> 
+       <item>地图</item> 
+       <item>线路及车站</item> 
+     </string-array> 
+    <string name="chronometer_initial_format">Initial format: <xliff:g id="initial-format">%s</xliff:g></string>
+    <string name="selectstartpoint">选择出发</string>
+    <string name="selectendpoint">选择到达</string>
+    <string name="OK">确认</string>
+    <string name="noset">请选择站点</string>
+    <string name="selecttype">出行方案:</string>
+        
+</resources>
